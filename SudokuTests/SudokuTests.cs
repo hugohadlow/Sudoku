@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
 using NUnit.Framework;
-using Sudoku;
 
 namespace SudokuTests
 {
     public class SudokuTests
     {
-        Sudoku.Sudoku Sudoku = new Sudoku.Sudoku();
+        Sudoku.Sudoku Sudoku;
 
         [SetUp]
         public void Setup()

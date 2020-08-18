@@ -13,7 +13,6 @@ namespace Sudoku
             var results = exactCover.GetAllSolutions(exactCoverProblem);
             if (results.Count > 1) throw new ArgumentException("More than one solution exists.");
             else return ExactCoverResultToSudoku(results[0]);
-            //foreach (var rowNumber in result) Console.WriteLine(rowNumber);
         }
 
         public byte[,] GenerateRandomCompleteGrid()
